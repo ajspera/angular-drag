@@ -5,7 +5,7 @@
   "authors": [
     "ajspera <speradev@gmail.com>"
   ],
-  "description": "Directives for very simple click and drag event binding.",
+  "description": "A very lightweight tool to simplify a common click and drag ui event pattern",
   "main": "src/angular-drag-events.js",
   "keywords": [
     "angular",
