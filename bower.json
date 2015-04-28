@@ -9,7 +9,8 @@
   "main": "src/angular-drag-events.js",
   "keywords": [
     "angular",
-    "drag"
+    "drag",
+    "events"
   ],
   "license": "MIT",
   "ignore": [
@@ -22,8 +23,5 @@
   ],
   "dependencies": {
     "angular": "~1.x"
-  },
-  "devDependencies": {
-    "angular-mocks": "~1.x",
   }
 }
