@@ -1,12 +1,12 @@
 {
-  "name": "angular-drag",
-  "version": "0.0.0",
-  "homepage": "https://github.com/ajspera/angular-drag",
+  "name": "angular-drag-events",
+  "version": "0.0.1",
+  "homepage": "https://github.com/ajspera/angular-drag-events",
   "authors": [
     "ajspera <speradev@gmail.com>"
   ],
   "description": "Directives for very simple click and drag event binding.",
-  "main": "src/angular-drag.js",
+  "main": "src/angular-drag-events.js",
   "keywords": [
     "angular",
     "drag"
