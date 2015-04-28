@@ -20,7 +20,9 @@
                     angular.element($window).bind('mouseup touchend',stopDrag);
                     angular.element($window).bind('mousemove touchmove',onDrag);
                     if(typeof(asDragPress) == 'function'){
-                        asDragPress(scope, {$event: e, $dragged: parseEvent(e, true)});
+                        scope.$apply(function(){
+                            asDragPress(scope, {$event: e, $dragged: parseEvent(e, true)});
+                        });
                     }
                     e.preventDefault();
                     return false;
@@ -29,14 +31,18 @@
                     angular.element($window).unbind('mouseup touchend',stopDrag);
                     angular.element($window).unbind('mousemove touchmove',onDrag);
                     if(typeof(asDragRelease) == 'function'){
-                        asDragRelease(scope, {$event: e, $dragged: parseEvent(e)});
+                        scope.$apply(function(){
+                            asDragRelease(scope, {$event: e, $dragged: parseEvent(e)});
+                        });
                     }
                     e.preventDefault();
                     return false;
                 }
                 var onDrag = function(e){
                     if(typeof(asDrag) == 'function'){
-                        asDrag(scope, {$event: e, $dragged: parseEvent(e)});
+                        scope.$apply(function(){
+                            asDrag(scope, {$event: e, $dragged: parseEvent(e)});
+                        })
                     }
                     e.preventDefault();
                     return false;
